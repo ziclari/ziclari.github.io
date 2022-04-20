@@ -24,10 +24,14 @@
       display: flex;
       width: 100%;
       align-items: center;
+      padding: 10px;
+      text-transform: capitalize;
+      font-family: monospace;
+      font-size: 30px;
     }
     h3::before,h3::after{
       content: " ";
-      border: solid grey;
+      border: solid rgba(229, 255, 0, 0.594);
       border-width: 0.5em 0;
       height: .2em;
       margin: .2em;
@@ -35,15 +39,56 @@
     }
     p{
         text-align: justify;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-family:  Verdana, sans-serif;
         font-size: 15px;
         padding: 60px;
         line-height: 30px;
+        text-transform: capitalize;
       }
-      
     body{
-      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1042%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(96%2c 168%2c 255%2c 1)'%3e%3c/rect%3e%3cpath d='M311.1 236.36 a116.02 116.02 0 1 0 232.04 0 a116.02 116.02 0 1 0 -232.04 0z' fill='rgba(255%2c 255%2c 255%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M611.07 274.07 a143.05 143.05 0 1 0 286.1 0 a143.05 143.05 0 1 0 -286.1 0z' fill='rgba(255%2c 255%2c 255%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M332.81 433.74 a122.08 122.08 0 1 0 244.16 0 a122.08 122.08 0 1 0 -244.16 0z' fill='rgba(255%2c 255%2c 255%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M744.81 424.23 a180.27 180.27 0 1 0 360.54 0 a180.27 180.27 0 1 0 -360.54 0z' fill='rgba(255%2c 255%2c 255%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M27.72 4.66 a166.94 166.94 0 1 0 333.88 0 a166.94 166.94 0 1 0 -333.88 0z' fill='rgba(255%2c 255%2c 255%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1238.81 333.6 a119.93 119.93 0 1 0 239.86 0 a119.93 119.93 0 1 0 -239.86 0z' fill='rgba(255%2c 255%2c 255%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1042'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+    background-color: rgb(255, 104, 154);
     }
+
+    .column{
+      width: 50%;
+      height: 500px;
+      float: left;
+    }
+    #col1{
+      background: rgba(255, 255, 255, 0.619);
+    }
+    #col2{
+      background: rgba(245, 222, 179, 0.744);
+    }
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    nav{
+        width: 100%;
+        height: 100px;
+        background-color: aliceblue;
+
+    }
+    ul li{
+        list-style: none;
+        display: inline-block;
+        float: left;
+        line-height: 100px;
+    }
+    ul li a{
+        display: block;
+        text-decoration: none;
+        font-size: 14px;
+        font-family: monospace;
+        color:black;
+        padding: 0 50px;        
+    }
+    ul li a:hover{
+        color:yellow;
+    }
+
     </style>
 
 <body>
@@ -54,9 +99,24 @@
   <h2>
     <center>SOY EL MUNDO</center>
   </h2>
-  <h3>hola MUNDITO</h3>
+  
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#">About me</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+    
+
+  <h3>este es un test de diseño </h3>
+
   <hr>
-  <p>
+  <div id="col1" class="column">
+    <p><img src="C:\Users\Citlalli\Downloads\misc\uamito.svg" width="500" height="500" y="50"></p>
+  </div>
+  <div id="col2" class="column"><p>
     Esta noche oscura
     te tortura la locura
     procura estar a mi altura
@@ -88,7 +148,8 @@
     llevo la maldad
     y la expando a tu alrededor
     no requiero fuego y cúter
-    para causarte terror.  </p>
+    para causarte terror.  </p></div>
+  
 
 </body>
 
