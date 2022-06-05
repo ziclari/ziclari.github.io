@@ -1,0 +1,424 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+ol,li{
+    list-style: none;
+}
+/*****GENERALES********************************************************/
+*{
+    box-sizing: border-box;
+}
+  
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    width: 100%;
+    background-color: #FFF;
+}
+a{
+    text-decoration: none;
+    color: #FFF;
+}
+
+h1{
+    color: #FFF;
+    font-weight: bold;
+    line-height: 1.5em;
+    text-align: center;
+    font-size: 1.8em;
+    background-color:#b31e19;
+    width: fit-content;
+    padding: 1.5%;
+}
+h2{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 2%;
+
+}
+.boton{
+    line-height: 40px;
+    width: fit-content;
+    font-weight: bold;
+    font-size: 1.6em;
+    background-color: #b31e19;
+    color: #FFF; 
+    padding: 15px 30px;
+    -moz-border-radius: 35px;
+    -webkit-border-radius: 35px;
+    -o-border-radius: 35px;
+    -ms-border-radius: 35px;
+    border-radius: 35px;
+}
+/*SECCION CABEZA********************************************/
+.cabeza{
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+
+.cabeza .logo{
+    width: 370px; 
+    margin: 10px 40px;
+}
+.cabeza .texto{
+    top: -90px;
+    border-radius: 36% 64% 50% 50% / 56% 64% 36% 44%;
+    border: 10px solid #000;
+    width: 30%;
+    left: 60%;
+    background-color: #000;
+    position: relative;
+}
+.cabeza .texto p{
+    text-align: center;
+    color: #FFF;
+    font-size: 1.1em;
+    font-style: italic;
+}
+.cabeza .texto p span{
+    line-height: 50px;
+    font-weight: bold;
+    font-style: normal;
+}
+/*SECCION MENU*/
+.menu{
+    position: absolute;
+    width: 100%;
+    background-color: #b31e19;
+    font-weight: bold;
+    text-align: center;
+}
+.menu li{
+    display: inline-block;
+    padding: 5px 20px;
+} 
+.menu li:nth-child(3){
+    font-size: 1.3em;
+}
+
+/* Seccion Slider ***********************************************/
+
+.slider{
+    background-image: url(../img/hotdogprincipal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    
+}
+
+.slider h1{
+    color: #000;
+    font-weight: bold;
+    line-height: 1.5em;
+    text-align: center;
+    font-size: 44px;
+    padding: 2% 7%;
+    width: fit-content;
+    background-color: rgba(255, 255, 255, 0.45);
+    display: inline-block;
+    -moz-border-radius: 35px;
+    -webkit-border-radius: 35px;
+    -o-border-radius: 35px;
+    -ms-border-radius: 35px;
+    border-radius: 35px;
+    margin: 100px 60px;
+}
+.slider .botones{
+    margin-top: 100px;
+    width: 100%;
+    bottom: 0px;
+}
+.slider .boton {
+    display: inline-block;
+    margin: 30px;
+}
+  
+.slider2{
+    background-image: url(../img/hotdognosotros.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+.slider2 h1{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.5em;
+    text-align: center;
+    font-size: 44px;
+    padding: 2% 7%;
+    width: fit-content;
+    background-color: rgba(0, 0, 0, 0.45);
+    display: inline-block;
+    margin: 150px 60px;
+}
+/* SECCION UNO **************************************/
+  
+.seccionUno{
+    width: 100%;
+    height: 550px;
+    text-align: center;
+   /* position: relative;*/
+}
+.seccionUno h2{
+    margin-bottom: 9%;
+}
+.seccionUno .columnaUno{
+    width: 33.3%;
+    height: 400px;
+    float: left;
+    padding: 5%;
+    background-image: url(../img/hotdogizq.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 33.3%;
+}
+.seccionUno h1{
+   /* position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);*/
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+  
+.seccionUno .columnaDos{
+    width: 33.3%;
+    height: 400px;
+    float: left;
+    color: #000;
+    padding: 5%;
+}
+.seccionUno .columnaDos .boton{ 
+    display: inline-block;
+    margin-top: 100px;
+    margin: 30px;
+}
+
+.seccionUno .columnaTres{
+    width: 33.3%;
+    height: 400px;
+    float: left;
+    padding: 5%;
+    background-image: url(../img/hotdogder.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.linea{
+    border-bottom: 3px solid #000;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+/*SECCION DOS**************************************************/
+.seccionDos{
+    width: 100%;
+    text-align: center;
+}
+.seccionDos h1{
+    margin-left: 3%;
+    margin-top: 20px;
+}
+.seccionDos .foto{
+    width: 300px; 
+    height: 300px;
+    margin: 10px;
+}
+/***SECCION TRES***********************************/
+.seccionTres{
+    width: 100%;
+    text-align: center;
+    /*position: relative;*/
+}
+.seccionTres h1{
+    /*position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);*/
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.seccionTres .columna{
+    width: 100%;
+    height: 500px;
+    padding: 20px;
+}
+.seccionTres .columna p{
+    padding: 0 80px;
+}
+.seccionTres .columna .linea{
+    width: 30%;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+}
+.seccionTres ul {
+    margin: 20px;
+}
+.seccionTres ul li {
+    display: inline;
+    padding: 20px; 
+}
+.facebook{
+    content: '';
+    display: inline-block;
+    height: 3.5em;
+    width:3.5em;
+    background-image: url(../img/facebook.png);
+    background-size:contain; 	
+    background-repeat:no-repeat;
+}
+.twitter{
+    content: '';
+    display: inline-block;
+    height: 3.5em;
+    width:3.5em;
+    background-image: url(../img/twitter.png);
+    background-size:contain; 	
+    background-repeat:no-repeat;
+}
+.instagram{
+    content: '';
+    display: inline-block;
+    height: 3.5em;
+    width:3.5em;
+    background-image: url(../img/instagram.png);
+    background-size:contain; 	
+    background-repeat:no-repeat;
+}
+.whatsapp{
+    content: '';
+    display: inline-block;
+    height: 3.5em;
+    width:3.5em;
+    background-image: url(../img/whatsapp.png);
+    background-size:contain; 	
+    background-repeat:no-repeat;
+}
+.correo{
+    content: '';
+    display: inline-block;
+    height: 5em;
+    width:5em;
+    position: absolute;
+    background-image: url(../img/correo.png);
+    background-size:contain; 	
+    background-repeat:no-repeat;
+}
+/*SECCION GALERIA *****************************************/
+.seccionCuatro{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.seccionCuatro h1{
+    margin-top: 80px;
+    margin-left: 40px;
+}
+.seccionCuatro .foto{
+    width: 300px; 
+    height: 250px;
+    margin: 10px;
+}
+.seccionCuatro .columnaUno{
+    width: 50%;
+    float: left;
+    padding: 5% 2% 5% 5%;
+}
+.seccionCuatro .columnaDos{
+    width: 50%;
+    float: left;
+    padding: 1.2%;
+}
+.seccionCuatro .columnaDos .foto{
+    width: 340px;
+    height: 200px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.seccionCuatro .imagen{
+    width: 370px;
+    height: 370px; 
+}
+.seccionCuatro .imagen2{
+    width: 400px;
+    height: 250px; 
+}
+.seccionCuatro .oferta{
+    background-color: salmon;
+    padding: 5%;
+    margin: 5%;
+    width: 70%;
+}
+/*SECCION CINCO*******************************************/
+.seccionCinco{
+    width: 100%;
+    text-align: center;
+}
+.seccionCinco h1{
+    margin-top: 80px;
+    margin-left: 40px;
+}
+.seccionCinco col1{
+    width: 33.3%;
+    text-align: center;
+}
+.seccionCinco col2{
+    width: 33.3%;
+    text-align: center;
+}
+.seccionCinco col3{
+    width: 33.3%;
+    text-align: center;
+}
+/**footer **********************************************************************/
+footer{
+    height: 100px;
+    padding: 5%;
+    font-size: 0.8em;
+    background-color: #b31e19;
+    color: #FFF;
+}
