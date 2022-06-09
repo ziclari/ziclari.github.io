@@ -414,6 +414,12 @@ h2{
     width: 33.3%;
     text-align: center;
 }
+/*Clientes satisfechos**/
+.seccionClientes{
+    width: 100%;
+    text-align: center;
+    background-color: #BC1823;
+}
 /**footer **********************************************************************/
 footer{
     height: 100px;
