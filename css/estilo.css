@@ -89,6 +89,15 @@ h2{
     -ms-border-radius: 35px;
     border-radius: 35px;
 }
+.boton a{
+    transition: all .35s;
+}
+
+.boton  a:hover{
+    color: #FAB919;
+    font-size: 1.15em;
+}
+  
 /*SECCION CABEZA********************************************/
 .cabeza{
     position: relative;
@@ -135,7 +144,9 @@ h2{
 .menu li:nth-child(3){
     font-size: 1.3em;
 }
-
+.menu li a:hover{
+    color: #ffd364;
+}
 /* Seccion Slider ***********************************************/
 
 .slider{
@@ -163,7 +174,11 @@ h2{
     -ms-border-radius: 35px;
     border-radius: 35px;
     margin: 100px 60px;
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: fade-in 1s forwards 1;
 }
+
 .slider .botones{
     margin-top: 100px;
     width: 100%;
@@ -191,7 +206,10 @@ h2{
     width: fit-content;
     background-color: rgba(0, 0, 0, 0.45);
     display: inline-block;
-    margin: 150px 60px;
+    margin: 150px 25%;
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: fade-in 1s forwards 1;
 }
 /* SECCION UNO **************************************/
   
@@ -294,7 +312,7 @@ h2{
 .seccionTres .columna .linea{
     width: 30%;
     margin-top: 1.5%;
-    margin-bottom: 1.5%;
+    margin-bottom: 3%;
 }
 .seccionTres ul {
     margin: 20px;
@@ -303,41 +321,18 @@ h2{
     display: inline;
     padding: 20px; 
 }
-.facebook{
-    content: '';
-    display: inline-block;
-    height: 3.5em;
-    width:3.5em;
-    background-image: url(../img/facebook.png);
-    background-size:contain; 	
-    background-repeat:no-repeat;
+.seccionTres h2{
+    margin: 40px 0;
 }
-.twitter{
-    content: '';
-    display: inline-block;
+
+.iconoRedSocial{
     height: 3.5em;
     width:3.5em;
-    background-image: url(../img/twitter.png);
-    background-size:contain; 	
-    background-repeat:no-repeat;
+    margin: -20px 10px;
+    transition: all .35s;
 }
-.instagram{
-    content: '';
-    display: inline-block;
-    height: 3.5em;
-    width:3.5em;
-    background-image: url(../img/instagram.png);
-    background-size:contain; 	
-    background-repeat:no-repeat;
-}
-.whatsapp{
-    content: '';
-    display: inline-block;
-    height: 3.5em;
-    width:3.5em;
-    background-image: url(../img/whatsapp.png);
-    background-size:contain; 	
-    background-repeat:no-repeat;
+.iconoRedSocial:hover{
+    transform: translateY(-10px);
 }
 .correo{
     content: '';
@@ -357,13 +352,18 @@ h2{
 }
 .seccionCuatro h1{
     margin-top: 80px;
-    margin-left: 40px;
 }
 .seccionCuatro .foto{
     width: 300px; 
     height: 250px;
     margin: 10px;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fade-in 1s forwards 1;
 }
+/*.seccionCuatro .foto:hover{
+    transform: scale(1.2);
+}*/
 .seccionCuatro .columnaUno{
     width: 50%;
     float: left;
@@ -373,6 +373,9 @@ h2{
     width: 50%;
     float: left;
     padding: 1.2%;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fade-in 1s forwards 1;
 }
 .seccionCuatro .columnaDos .foto{
     width: 340px;
@@ -396,16 +399,27 @@ h2{
     margin-top: 80px;
     margin-left: 40px;
 }
-.seccionCinco col1{
+.seccionCinco img{
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fade-in 1s forwards 1;
+}
+.seccionCinco .col1{
     width: 33.3%;
+    background-color: #f5e7ca;
+    float: left;
     text-align: center;
 }
-.seccionCinco col2{
+.seccionCinco .col2{
     width: 33.3%;
+    background-color: #ffd364;
+    float: left;
     text-align: center;
 }
-.seccionCinco col3{
+.seccionCinco .col3{
     width: 33.3%;
+    background-color: #FAB919;
+    float: left;
     text-align: center;
 }
 
@@ -487,11 +501,6 @@ h2{
 .product-img{
     width: 40%;
     height: 200px;
-    -moz-border-radius: 35px;
-    -webkit-border-radius: 35px;
-    -o-border-radius: 35px;
-    -ms-border-radius: 35px;
-    border-radius: 35px;
     background: #fff;
     position: relative;
     opacity: 0;
@@ -514,7 +523,7 @@ h2{
     opacity: 0;
     transform: rotate(-90deg);
     text-transform: capitalize;
-    color: #eae3d2;
+    color: #ffffff;
     padding: 5px 10px;
     width: 100px;
     font-size: 18px;
@@ -535,7 +544,7 @@ h2{
     width: 60%;
     height: 200px;
     height: auto;
-    background: #f5caca;
+    background: #f5e7ca;
     padding: 10px;
     display: flex;
     justify-content: center;
@@ -564,27 +573,16 @@ h2{
 }
 
 .price{
-    font-size: 2em;
+    font-size: 1em;
     font-weight: 100;
-    color: #282120;
-}
-.btn{
-    background: #bc182384;
-    color: #ffffff;
-    border: none;
-    text-transform: capitalize;
-    font-size: 0.7em;
-    padding: 10px 20px;
-    cursor: pointer;
+    color: #4f0b0f;
     display: inline-block;
-    transition: all 0.2s ease-in-out;
-    margin: 10px;
+}
+.product .boton{
+    padding: 15px;
+    line-height: 25px;
 }
 
-.btn:hover{
-    background-color: #BC1823;
-    transform: scale(1.1);
-}
 .contenedor{
     display: flex;
     margin-top: 20px;
@@ -601,7 +599,49 @@ h2{
     height: 150px;
 }
 .contenedor .price{
-    font-size: 1.5em;
+    font-size: 0.8em;
+}
+.product .boton{
+    font-size: 1.3em;
+}
+/*SECCION DE PROMOCION ************** *******************************************/
+.seccionPromo{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.seccionPromo h1{
+    font-size: 1.4em;
+    margin: 10px 0 20px 0;
+}
+.seccionPromo h2{
+    color: #282120;
+}
+.seccionPromo .product{
+    margin: 10px 0;
+}
+.seccionPromo .product-img{
+    margin: 5px ;
+    width: 30%;
+    height: 150px;
+}
+.seccionPromo .product-listing{
+    width: 70%;
+    height: auto;
+}
+
+.seccionPromo .mas {
+    font-size: 20px;
+    color: #000;
+    padding: 60px 0;
+}
+.seccionPromo .SeccionDiaSemana{
+    flex-direction: row;
+    margin: 0 60px;
+}
+.SeccionDiaSemana .product .boton{
+    font-size: 1.1em;
 }
 /**footer **********************************************************************/
 footer{
