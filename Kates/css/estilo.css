@@ -1,0 +1,183 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/**GENERALES**********************************************************************/
+body{
+    background-color: lavenderblush;
+    width: 100%;
+    font-size: 16px;
+    background-image: url(../img/waves2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-family: 'Arimo', sans-serif;
+    color: #B44715;
+}
+
+.profile{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.social{
+    width: 100px;
+    height: 60px;
+    margin-right: -35px;
+    object-fit: cover;
+    transition: all .35s;
+}
+.social:hover{
+    transform: translateX(10px);
+    filter: brightness(0.4);
+}
+.miniWave{
+    width: 60%;
+}
+/**sección de arriba: info***************************************************/
+.caja{
+    width: 100%;
+    text-align: center;
+    margin: 12% 0 5% 0;
+    height: 350px;
+}
+.caja .col1{
+    width: 40%;
+    text-align: center;
+    float: left;
+}
+.caja .col1 h1{
+    padding: 4%;
+    font-weight: 600;
+    font-size: 1.8em;
+}
+.col1 h2{
+    font-size: 0.9em;
+    padding: 2%;
+    font-style: italic;
+}
+.caja .col2{
+    width: 60%;
+    margin-top: 12%;
+    text-align: center;
+    float: left;
+}
+.col2 p {
+    padding: 5% 8%;
+}
+.col2 ul li{
+    display: inline-block;
+}
+/***SECCION MENU***************************************************************/
+.menu{
+    width: 100%;
+    background-color: #1C191A;
+    font-weight: bold;
+}
+.menu ul{
+    padding-left: 5%;
+}
+.menu li{
+    display: inline-block;
+    padding: 25px 30px;
+} 
+.menu li a{
+    text-decoration: none;
+    color: #FFF;
+    font-size: 1.1em;
+    transition: all .35s;
+}
+
+.menu li a:hover{
+    color: #e5723e;
+    color: #B44715;
+}
+/**GALERIA*******************************************************************/
+.galeria{
+   width: 100%;
+   text-align: center;
+   margin-top: 2%;
+}  
+    
+.galeria figure {
+    position: relative;
+    display: inline-block;
+    margin:1em;
+    margin-bottom: 3em;
+}
+
+.galeria figure img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius:4% 95% 6% 95%/95% 4% 92% 5%;
+    transform: rotate(-2deg);
+    opacity: 1;
+    -webkit-transition: opacity 0.5s; /* For Safari 3.1 to 6.0 */
+    transition: opacity 0.5s;
+}
+        
+.galeria figure img:hover {
+    opacity: 0.9;
+}
+.galeria figure figcaption {
+    padding: 10px;
+    line-height: 1.5;
+    position: absolute;
+    color: #B44715;
+    opacity: 0.7;
+}  
+
+.fig-title {
+    font-weight: 700;
+}
+
+.fig-author {
+    font-weight: 300;
+    font-size: 0.8rem;
+}
