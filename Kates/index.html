@@ -11,6 +11,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
 </head>
 <body>
+	<!--Menu flexible-->
+	<div class="hamburger-menu">
+		<input id="menu_toggle" type="checkbox" />
+		<label class="menu_btn" for="menu_toggle">
+		  <span></span>
+		</label>
+	
+		<ul class="menu_box">
+		  <li><a href="index.html">About Me</a></li>
+		  <li><a href="#gallery">Gallery</a></li>
+		  <li><a href="#skills">Skills</a></li>
+		  <li><a href="#hobbies">Hobbies</a></li>
+		  <li><a href="#work">My work</a></li>
+		  <li><a href="#contact">Contact</a></li>
+		</ul>
+	</div>
+	<!--Thanks to https://codepen.io/hexagoncircle-->
     <div class="caja">
         <div class="col1">
             <img src="img/kate2.JPG" alt="foto" class="profile">
@@ -19,6 +36,7 @@
             President of the United States</h2>
         </div>
         <div class="col2">
+			<img src="img/miniwave2.png" alt="mini wave" class="miniWave" id="hidden">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             <ul>
                 <li> <img src="img/none2.png" alt="0" class="social"></li>
@@ -32,13 +50,14 @@
         </div>
     </div>
     
+	
     <nav class="menu">
-        <ul>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Hobbies</a></li>
-            <li><a href="#">My work</a></li>
-            <li><a href="#">Contact</a></li>
+	    <ul>
+            <li><a href="#" id="gallery">Gallery</a></li>
+            <li><a href="#" id="skills">Skills</a></li>
+            <li><a href="#" id="hobbies">Hobbies</a></li>
+            <li><a href="#" id="work">My work</a></li>
+            <li><a href="#" id="contact">Contact</a></li>
         </ul>
     </nav>
 

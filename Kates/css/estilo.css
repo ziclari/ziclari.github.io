@@ -79,11 +79,15 @@ body{
 .miniWave{
     width: 60%;
 }
+#hidden{
+    visibility: hidden;
+}
+
 /**sección de arriba: info***************************************************/
 .caja{
     width: 100%;
     text-align: center;
-    margin: 12% 0 5% 0;
+    margin: 6% 0 5% 0;
     height: 350px;
 }
 .caja .col1{
@@ -103,7 +107,7 @@ body{
 }
 .caja .col2{
     width: 60%;
-    margin-top: 12%;
+    margin-top: 0%;
     text-align: center;
     float: left;
 }
@@ -115,6 +119,7 @@ body{
 }
 /***SECCION MENU***************************************************************/
 .menu{
+    margin-top: 2%;
     width: 100%;
     background-color: #1C191A;
     font-weight: bold;
@@ -137,6 +142,9 @@ body{
     color: #e5723e;
     color: #B44715;
 }
+
+
+
 /**GALERIA*******************************************************************/
 .galeria{
    width: 100%;
@@ -180,4 +188,150 @@ body{
 .fig-author {
     font-weight: 300;
     font-size: 0.8rem;
+}
+.hamburger-menu{
+    visibility: hidden;
+}
+
+@media (max-width: 576px) {  
+    .caja{
+        height: 600px;
+    }
+    .caja .col1{
+        width: 100%;
+    }
+    .caja .col2{
+        width: 100%;
+        margin-top: 1%;
+    }
+    #hidden{
+        visibility: visible;
+    }
+    .miniWave{
+        width: 50%;
+    }
+    .social{
+        width: 90px;
+        height: 40px;
+        margin-right: -35px;
+        object-fit: cover;
+        transition: all .35s;
+    }
+    
+    .galeria figure {
+        position: relative;
+        display: inline-block;
+        margin:0.5em;
+        margin-bottom: 3em;
+    }
+    /*menu**/
+    .menu {
+        text-align: center;
+        height: 70px;
+    }
+    .menu ul li:nth-child(1){
+        position:absolute;
+    }
+
+    .menu ul li:nth-child(n+2){
+        visibility: hidden;
+    }
+    .hamburger-menu{
+        visibility: visible;
+    }
+    #menu_toggle {
+        opacity: 0;
+      }
+      
+      #menu_toggle:checked ~ .menu_btn > span {
+        transform: rotate(45deg);
+      }
+      #menu_toggle:checked ~ .menu_btn > span::before {
+        top: 0;
+        transform: rotate(0);
+      }
+      #menu_toggle:checked ~ .menu_btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+      }
+      #menu_toggle:checked ~ .menu_box {
+        visibility: visible;
+        left: 0;
+      }
+      
+      .menu_btn {
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background-color: #1C191A;
+        border:8px solid #1C191A;
+        border-radius: 50%;
+        width: 26px;
+        height: 26px;
+      
+        cursor: pointer;
+        z-index: 1;
+      }
+      
+      .menu_btn > span,
+      .menu_btn > span::before,
+      .menu_btn > span::after {
+        display: block;
+        position: absolute;
+      
+        width: 100%;
+        height: 2px;
+      
+        background-color: #B44715;
+      
+        transition-duration: .25s;
+      }
+      .menu_btn > span::before {
+        content: '';
+        top: -8px;
+      }
+      .menu_btn > span::after {
+        content: '';
+        top: 8px;
+      }
+      
+      .menu_box {
+        display: block;
+        position: fixed;
+        visibility: hidden;
+        top: 0;
+        left: -100%;
+      
+        width: 300px;
+        height: 100%;
+      
+        margin: 0;
+        padding: 80px 0;
+      
+        list-style: none;
+      
+        background-color: #1C191A;
+      
+        transition-duration: .25s;
+      }
+      
+      .menu_box li a{
+        display: block;
+        padding: 12px 24px;
+      
+        color: #FFF;
+        font-size: 20px;
+        font-weight: 600;
+      
+        text-decoration: none;
+      
+        transition-duration: .35s;
+      }
+      .menu_box li a:hover {
+        background-color: #B44715;
+      }
+      
+
 }
