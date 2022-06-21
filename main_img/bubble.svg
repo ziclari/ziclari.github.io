@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="100px" height="100px" ><defs/>
+<g><circle cx="50" cy="50" r="40" stroke="SteelBlue" stroke-width="1" fill="lightblue" />
+  <circle cx="65" cy="40" r="15" stroke="PaleTurquoise" stroke-width="1" fill="lightcyan" />
+    <circle cx="45" cy="50" r="5" stroke="PaleTurquoise" stroke-width="1" fill="lightcyan" /></g>
+</svg>
