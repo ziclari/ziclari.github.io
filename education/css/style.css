@@ -1,0 +1,196 @@
+:root{
+    --fuenteHeading: 'PT Sans', sans-serif;
+    --fuenteParrafos: 'Open Sans', sans-serif;
+    --blanco: #ffffff;
+    --vinoclaro: #f1dcda;
+}
+
+body{
+    /*background-color: var(--vinoclaro);
+    */
+    font-family: var(--fuenteParrafos);
+    background-image: radial-gradient(#ff7700 2px, transparent 2px);
+    background-size: 72px 72px;
+    background-color: #ffffff;
+    
+    /*background-image: repeating-linear-gradient(0deg, #ff7700, #ff7700 2px, transparent 2px, transparent);
+    background-size: 75px 75px;
+    background-color: #ffffff;*/
+}
+
+/*_______________________________________________________________________________
+HEADER*/
+.header{
+    background-color: #E34E09;
+    /*background-color: #385573;*/
+    height: auto;
+    margin-bottom: 30px;
+}  
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.imglogo{
+    width: 25%;
+    height: fit-content;
+}
+.enlaces{
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    color: var(--blanco);
+    text-decoration: none;  
+    padding-top: 20px  ;
+}
+.enlaces .icono{
+    width: 30px;
+
+}
+@media(min-width: 768px){
+    .barra{
+        display: flex; /*coloca uno frente al otro (blo con los links de contactos, nosotros, y cusos)*/
+        justify-content: space-between; /*para alinear contenido horizontalmente*/
+        align-items: start; /*para alinear verticalmente*/
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+}
+
+@media(min-width: 768px){
+    .navegacion{
+        display: flex; /*se coloca uno frente al otro*/
+        gap: 2rem;/*para separarlos*/
+        width: 100%;
+        height: 100%;
+        color: #000000;
+        justify-content: right;
+        padding-top: 20px;
+        
+    }
+    .logo{
+        justify-content: flex-start;
+    }
+}
+.fotoini{
+    display: flex;
+    padding: 3%;
+}
+.fotoini img{
+    height: 300px;
+    border-radius: 10%;
+    border: 3px solid black;
+    /*border: 3px solid #330000;*/
+}
+.bienvenida{
+    display: flex;
+    justify-content: center;
+}
+.intro{
+    padding: 3%;
+    border-radius: 10%;
+   /* border: 3px solid black;*/
+}
+.intro h1 span{
+    background-color: #1CABE2;
+    border-radius: 60%;
+    padding: 10px 15px 10px 0px;
+}
+/* CSS */
+.boton {
+  background-color: #FE567A;
+  border-radius: 25px;
+  border: 3px solid black;
+  box-sizing: border-box;
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  
+}
+
+.boton:hover,
+.boton:focus {
+  background-color: #F082AC;
+}
+.imgcurso {
+    width: 70%;
+    background: rgba(250,250,250, .8);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    margin: 10px;
+    margin-left: 60px;
+    padding: 10px;
+}
+.imgcurso  .header {
+    background-color: #4c8eaf;
+    color: white;
+    padding: 10px;
+    font-size: 40px;
+}
+
+.imgcurso .boton{
+    font-size: 16px;
+}
+.otroscursos{
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.imgotro{
+    background: rgba(250,250,250, .8);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    margin: 10px;
+}
+.imgotro  .header {
+    background-color: rgb(201, 85, 95);
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.imgEjemplos{
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.imgEjem{
+    background: rgba(250,250,250, .8);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    margin: 10px;
+    height: 90px;
+}
+/*__________________________________________________________________________________
+#FOOTER*/
+
+.footer{
+    background-color: #330000;
+    padding: 25px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+}
+
+.bold{
+    font-weight: bold;
+    color: var(--blanco);
+    font-size: 30px;
+    padding: 5px;
+}
+.color-letra{
+    color: var(--blanco);
+    font-size: 30px;
+    padding: 5px;
+
+}
+
