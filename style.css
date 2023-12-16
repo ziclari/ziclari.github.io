@@ -101,8 +101,10 @@ body{
     color: #866d48;
 }
 .profile{
-    height: 130px;
-    width: fit-content;
+    width: 100px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
     border-radius: 50%;
     border:3px solid black;
 }

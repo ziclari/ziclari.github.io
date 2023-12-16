@@ -179,8 +179,10 @@ HEADER*/
         padding: 10px;
     }
     .fotoini img{
-        width: 80%;
-        height: max-content;
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        
     }
     .color-letra{
         margin: 0;
@@ -194,6 +196,11 @@ HEADER*/
         justify-content: center;
         padding-top: 20px;
         
+    }
+    .imglogo{
+        width: 80px;
+        height: 60px;
+        object-fit: cover;
     }
 }
 /*__________________________________________________________________________________

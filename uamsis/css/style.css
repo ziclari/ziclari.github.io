@@ -156,5 +156,16 @@ nav a {
 	nav {
 		flex-wrap: wrap;
 	}
+	.pantera{
+		width: 200px;
+		height: 200px;
+		object-fit: cover;
+	}
+	.introduccion{
+		padding: 0;
+	}
+	.final{
+		margin-top: 20px;
+	}
 
 }
