@@ -66,7 +66,8 @@ body{
 	margin-top: -40px;
 }
 nav {
-	margin-top: -50px;
+	display: flex;
+	margin-top: -70px;
 	margin-left: 85px;
 }
 nav a {
@@ -74,6 +75,7 @@ nav a {
     color: white;
 	font-weight: bold;
     text-decoration: none;
+	margin: 2px;
 }
 .a1{
 	background-color: #F08200;
@@ -144,4 +146,14 @@ nav a {
 }
 .iconocorreo{
 	width: 60px;
+}
+
+@media (max-width: 700px) {  
+	.ing{
+		display: none;
+	}
+	nav {
+		flex-wrap: wrap;
+	}
+
 }
