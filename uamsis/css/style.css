@@ -105,6 +105,7 @@ nav a {
 @media(min-width: 768px){
 	.pantera{
 		width: 30%;
+		height: max-content;
 		
 	}
 	.inicio{

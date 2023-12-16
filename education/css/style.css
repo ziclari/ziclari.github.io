@@ -1,3 +1,5 @@
+
+
 :root{
     --fuenteHeading: 'PT Sans', sans-serif;
     --fuenteParrafos: 'Open Sans', sans-serif;
@@ -8,6 +10,7 @@
 body{
     /*background-color: var(--vinoclaro);
     */
+    margin: 0;
     font-family: var(--fuenteParrafos);
     background-image: radial-gradient(#ff7700 2px, transparent 2px);
     background-size: 72px 72px;
@@ -22,6 +25,7 @@ body{
 HEADER*/
 .header{
     background-color: #E34E09;
+    width: 100%;
     /*background-color: #385573;*/
     height: auto;
     margin-bottom: 30px;
@@ -33,7 +37,7 @@ HEADER*/
 }
 .imglogo{
     width: 25%;
-    height: fit-content;
+    height: max-content;
 }
 .enlaces{
     display: block;
@@ -70,7 +74,9 @@ HEADER*/
     }
     .logo{
         justify-content: flex-start;
+        
     }
+    
 }
 .fotoini{
     display: flex;
@@ -130,8 +136,8 @@ HEADER*/
 .imgcurso  .header {
     background-color: #4c8eaf;
     color: white;
-    padding: 10px;
-    font-size: 40px;
+    padding: 20px 0px 20px 0px;
+    font-size: 1.5rem;
 }
 
 .imgcurso .boton{
@@ -151,8 +157,8 @@ HEADER*/
 .imgotro  .header {
     background-color: rgb(201, 85, 95);
     color: white;
-    padding: 10px;
-    font-size: 20px;
+    padding: 20px 0px 20px 0px;
+    font-size: 1rem;
 }
 
 .imgEjemplos{
@@ -166,6 +172,29 @@ HEADER*/
     text-align: center;
     margin: 10px;
     height: 90px;
+}
+@media (max-width: 576px) {  
+    .bienvenida{
+        display: block;
+        padding: 10px;
+    }
+    .fotoini img{
+        width: 80%;
+        height: max-content;
+    }
+    .color-letra{
+        margin: 0;
+    }
+    .bold{
+        margin: 0;
+    }
+    .navegacion{
+        display: flex; /*se coloca uno frente al otro*/
+        gap: 1.5rem;/*para separarlos*/
+        justify-content: center;
+        padding-top: 20px;
+        
+    }
 }
 /*__________________________________________________________________________________
 #FOOTER*/
@@ -184,13 +213,13 @@ HEADER*/
 .bold{
     font-weight: bold;
     color: var(--blanco);
-    font-size: 30px;
     padding: 5px;
+    font-size: 1.5rem;
 }
 .color-letra{
     color: var(--blanco);
-    font-size: 30px;
     padding: 5px;
+    font-size: 1.5rem;
 
 }
 
