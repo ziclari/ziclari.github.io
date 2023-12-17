@@ -103,7 +103,6 @@ body{
 .profile{
     width: 100px;
     height: 150px;
-    border-radius: 50%;
     object-fit: cover;
     border-radius: 50%;
     border:3px solid black;
@@ -112,10 +111,6 @@ body{
     .header{
         display: block;
         padding: 10px;
-    }
-    .profile{
-        width: 30%;
-        height: max-content;
     }
     .header_info{
         width: 100%;
