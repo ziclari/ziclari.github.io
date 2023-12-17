@@ -49,6 +49,7 @@ table {
 /*global*************************************/
 body{
     background-color:black;
+
     /**
     background-color: lightsalmon;
     background-image: url(https://2.bp.blogspot.com/-i-msrIHhadE/UDX37A0ZC0I/AAAAAAAAEOk/kwePOScNWpE/s1600/Smiley+Happy+Face+3D+Gif+Animation+clip+art+free+download+3d-animated-gifs.net+websites+blogs+facebook+email+gmail+yahoo+msn+decoration+graphics+art+powerpoind+sign+color+yelow+red+black.gif);
@@ -69,22 +70,31 @@ body{
     margin: 0 8%;
     padding: 2%;
     background-color: #ffeccf;
+    background:
+    radial-gradient(35.36% 35.36% at 100% 25%,#0000 66%,#ffc13b 68% 70%,#0000 72%) 48px 48px/calc(2*48px) calc(2*48px),
+    radial-gradient(35.36% 35.36% at 0    75%,#0000 66%,#ffc13b 68% 70%,#0000 72%) 48px 48px/calc(2*48px) calc(2*48px),
+    radial-gradient(35.36% 35.36% at 100% 25%,#0000 66%,#ffc13b 68% 70%,#0000 72%) 0 0/calc(2*48px) calc(2*48px),
+    radial-gradient(35.36% 35.36% at 0    75%,#0000 66%,#ffc13b 68% 70%,#0000 72%) 0 0/calc(2*48px) calc(2*48px),
+    repeating-conic-gradient(#ffffff 0 25%,#0000 0 50%) 0 0/calc(2*48px) calc(2*48px),
+    radial-gradient(#0000 66%,#ffc13b 68% 70%,#0000 72%) 0 calc(48px/2)/48px 48px
+    #ffffff;
 }
 
-.proyects{
+.projects{
     padding: 2%;
-    line-height: 30px;
-    background-color: #ecaf9f;
-    border-radius: 8px;
+    line-height: 1.5rem;
+    color: #ffffff;
+    background-color: #000000;
+    /*border-radius: 0;*/
     text-align: justify;
 }
-.proyects h2{
+.projects h2{
     font-size: 1.1em;
 }
-.proyects a{
-    color: rgb(142, 108, 58);
+.projects a{
+    color: #ffc13c;
 }
-.proyects ul li span{
+.projects ul li span{
     font-size: 0.8em;
     display: inline-block;
 }
@@ -92,6 +102,10 @@ body{
     display: flex;
     padding: 30px;
     text-align: center;
+}
+.flecha{
+    width: 15px;
+    object-fit: cover;
 }
 .header_info{
     width: 80%;
@@ -101,11 +115,10 @@ body{
     color: #866d48;
 }
 .profile{
-    width: 100px;
-    height: 150px;
-    object-fit: cover;
+    height: 100px;
+    object-fit: cover;/*
     border-radius: 50%;
-    border:3px solid black;
+    border:3px solid black;*/
 }
 @media (max-width: 576px) {  
     .header{
@@ -115,5 +128,28 @@ body{
     .header_info{
         width: 100%;
 
+    }
+}
+@media (min-width: 700px) {
+    .content{
+        display: flex;
+    }
+    .header{
+        display: block;
+        align-items: center;
+        width: 40%;
+    }
+    .side{
+        width: 60%;
+    }
+    .projects{
+        width: 100%;
+    }
+    .header_info{
+        width: 100%;
+    }
+    .profile{
+        width: 100px;
+        height: 80px;
     }
 }
