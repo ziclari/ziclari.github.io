@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +9,48 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+  color: #ffffff;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+.content {
+  @apply bg-[#ffeccf] mx-[8%] my-0 p-[2%];
+  background: radial-gradient(
+        35.36% 35.36% at 100% 25%,
+        #0000 66%,
+        #ffc13b 68% 70%,
+        #0000 72%
+      )
+      48px 48px / calc(2 * 48px) calc(2 * 48px),
+    radial-gradient(
+        35.36% 35.36% at 0 75%,
+        #0000 66%,
+        #ffc13b 68% 70%,
+        #0000 72%
+      )
+      48px 48px / calc(2 * 48px) calc(2 * 48px),
+    radial-gradient(
+        35.36% 35.36% at 100% 25%,
+        #0000 66%,
+        #ffc13b 68% 70%,
+        #0000 72%
+      )
+      0 0 / calc(2 * 48px) calc(2 * 48px),
+    radial-gradient(
+        35.36% 35.36% at 0 75%,
+        #0000 66%,
+        #ffc13b 68% 70%,
+        #0000 72%
+      )
+      0 0 / calc(2 * 48px) calc(2 * 48px),
+    repeating-conic-gradient(#ffffff 0 25%, #0000 0 50%) 0 0 / calc(2 * 48px)
+      calc(2 * 48px),
+    radial-gradient(#0000 66%, #ffc13b 68% 70%, #0000 72%) 0 calc(48px / 2) /
+      48px 48px #ffffff;
 }

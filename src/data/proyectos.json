@@ -1,0 +1,86 @@
+{
+    "proyectos": [
+      {
+        "id": 1,
+        "nombre": "Diseño de Página de HotDogs",
+        "imagen": "/images/preview_hotdog.jpeg",
+        "url":"https://ziclari.github.io/ziclariv1/HotDog/index.html",
+        "descripcion": "Diseño y maquetación de varias páginas en HTML y CSS.",
+        "fecha": "23/05/22-30/05/22",
+        "tecnologias":["html","css"]
+      },
+      {
+        "id": 2,
+        "nombre": "Portafolio Sencillo",
+        "imagen": "/images/preview_portafolio.jpeg",
+        "url":"https://ziclari.github.io/ziclariv1/Kates/index.html",
+        "descripcion": "Diseño y maquetación de una página responsive en HTML y CSS.",
+        "fecha": "11/06/22-13/06/22",
+        "tecnologias":["html","css"]
+      },
+      {
+        "id": 3,
+        "nombre": "Pequeño experimento",
+        "imagen": "/images/preview_ex1.jpeg",
+        "url":"https://ziclari.github.io/ziclariv1/blues/index.html",
+        "descripcion": "Diseño y maquetación de una página sencilla en HTML y CSS.",
+        "fecha": "20/06/22",
+        "tecnologias":["html","css"]
+      },
+      {
+        "id": 4,
+        "nombre": "Diseño de página de horarios",
+        "imagen": "/images/preview_horarios.jpeg",
+        "url":"https://ziclari.github.io/ziclariv1/uamsis/index.html",
+        "descripcion": "Diseño y maquetación de varias páginas sencillas responsive en HTML y CSS.",
+        "fecha": "12/04/23",
+        "tecnologias":["html","css"]
+      },
+      {
+        "id": 5,
+        "nombre": "Diseño de página de educación [INCOMPLETO]",
+        "imagen": "/images/preview_academia.jpeg",
+        "url":"https://ziclari.github.io/ziclariv1/education/inicio.html",
+        "descripcion": "Diseño y maquetación de varias páginas en HTML y CSS. Versión incompleta",
+        "fecha": "09/12/23",
+        "tecnologias":["html","css","javascript"]
+      },
+      {
+        "id": 6,
+        "nombre": "Diseño de página Sistema Solar",
+        "imagen": "/images/preview_solar.jpeg",
+        "url":"https://ziclari.github.io/SistemaSolar/",
+        "descripcion": "Diseño y maquetación de una página responsive HTML y CSS. Uso de React js, UseState",
+        "fecha": "16/06/24",
+        "tecnologias":["react","html","css","javascript"]
+      },
+      {
+        "id": 7,
+        "nombre": "Diseño de página de cocteles La Piña Colada",
+        "imagen": "/images/preview_pina.jpeg",
+        "url":"https://ziclari.github.io/Cocteles/",
+        "descripcion": "Diseño y maquetación de una página responsive HTML y CSS. Uso de React js, UseState, UseEffect, API.",
+        "fecha": "18/06/24",
+        "tecnologias":["react","html","css","javascript"]
+      },
+      {
+        "id": 8,
+        "nombre": "Página de proyectos",
+        "imagen": "/images/logo2.svg",
+        "url":"#",
+        "descripcion": "Diseño y maquetación de una página responsive HTML y CSS. Uso de React js y Tailwind. Página Actual.",
+        "fecha": "23/06/24",
+        "tecnologias":["react","html","css","javascript","tailwind"]
+      },
+      {
+        "id": 9,
+        "nombre": "Juego de Memoria",
+        "imagen": "/images/preview_memoria.jpeg",
+        "url":"https://ziclari.github.io/JuegoDeMemoria/",
+        "descripcion": "Diseño, maquetación y programación de una página responsive HTML y CSS. Uso de React js y Tailwind.",
+        "fecha": "29/06/24",
+        "tecnologias":["react","html","css","javascript","tailwind"]
+      }
+    ]
+  }
+  
