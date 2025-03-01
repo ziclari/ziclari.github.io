@@ -80,6 +80,15 @@
         "descripcion": "Diseño, maquetación y programación de una página responsive HTML y CSS. Uso de React js y Tailwind.",
         "fecha": "29/06/24",
         "tecnologias":["react","html","css","javascript","tailwind"]
+      },
+      {
+        "id": 10,
+        "nombre": "Juego del ahorcado",
+        "imagen": "/images/preview_hangman.jpg",
+        "url":"https://ziclari.github.io/Ahorcado-Brython/",
+        "descripcion": "Diseño, gráficos y lógica de un juego en python (brython).",
+        "fecha": "14/10/24",
+        "tecnologias":["python","brython"]
       }
     ]
   }
