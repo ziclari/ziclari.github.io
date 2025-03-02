@@ -97,6 +97,7 @@ function App() {
     <button onClick={() => cambiarFiltro('javascript')} className={`mr-2 p-2 rounded font-bold ${filtro === 'javascript' ? 'bg-amber-500 text-black' : 'bg-stone-900'}`}>JavaScript</button>
     <button onClick={() => cambiarFiltro('react')} className={`mr-2 p-2 rounded font-bold ${filtro === 'react' ? 'bg-amber-500 text-black' : 'bg-stone-900'}`}>React</button>
     <button onClick={() => cambiarFiltro('tailwind')} className={`mr-2 p-2 rounded font-bold ${filtro === 'tailwind' ? 'bg-amber-500 text-black' : 'bg-stone-900'}`}>Tailwind</button>
+    <button onClick={() => cambiarFiltro('tailwind')} className={`mr-2 p-2 rounded font-bold ${filtro === 'python' ? 'bg-amber-500 text-black' : 'bg-stone-900'}`}>Python</button>
     
     </div>
     </div>

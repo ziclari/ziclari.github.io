@@ -87,7 +87,7 @@
         "imagen": "/images/preview_hangman.jpg",
         "url":"https://ziclari.github.io/Ahorcado-Brython/",
         "descripcion": "Diseño, gráficos y lógica de un juego en python (brython).",
-        "fecha": "14/10/24",
+        "fecha": "14/02/24",
         "tecnologias":["python","brython"]
       }
     ]
