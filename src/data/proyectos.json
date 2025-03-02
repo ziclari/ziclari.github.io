@@ -47,6 +47,15 @@
       },
       {
         "id": 6,
+        "nombre": "Juego del ahorcado",
+        "imagen": "/images/preview_hangman.jpg",
+        "url":"https://ziclari.github.io/Ahorcado-Brython/",
+        "descripcion": "Diseño, gráficos y lógica de un juego en python (brython).",
+        "fecha": "14/02/24",
+        "tecnologias":["python","brython"]
+      },
+      {
+        "id": 7,
         "nombre": "Diseño de página Sistema Solar",
         "imagen": "/images/preview_solar.jpeg",
         "url":"https://ziclari.github.io/SistemaSolar/",
@@ -55,7 +64,7 @@
         "tecnologias":["react","html","css","javascript"]
       },
       {
-        "id": 7,
+        "id": 8,
         "nombre": "Diseño de página de cocteles La Piña Colada",
         "imagen": "/images/preview_pina.jpeg",
         "url":"https://ziclari.github.io/Cocteles/",
@@ -64,7 +73,7 @@
         "tecnologias":["react","html","css","javascript"]
       },
       {
-        "id": 8,
+        "id": 9,
         "nombre": "Página de proyectos",
         "imagen": "/images/logo2.svg",
         "url":"#",
@@ -73,22 +82,13 @@
         "tecnologias":["react","html","css","javascript","tailwind"]
       },
       {
-        "id": 9,
+        "id": 10,
         "nombre": "Juego de Memoria",
         "imagen": "/images/preview_memoria.jpeg",
         "url":"https://ziclari.github.io/JuegoDeMemoria/",
         "descripcion": "Diseño, maquetación y programación de una página responsive HTML y CSS. Uso de React js y Tailwind.",
         "fecha": "29/06/24",
         "tecnologias":["react","html","css","javascript","tailwind"]
-      },
-      {
-        "id": 10,
-        "nombre": "Juego del ahorcado",
-        "imagen": "/images/preview_hangman.jpg",
-        "url":"https://ziclari.github.io/Ahorcado-Brython/",
-        "descripcion": "Diseño, gráficos y lógica de un juego en python (brython).",
-        "fecha": "14/02/24",
-        "tecnologias":["python","brython"]
       }
     ]
   }
