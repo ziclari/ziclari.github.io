@@ -1,3 +1,3 @@
 # ziclari.github.io
 
-Página Personal de proyectos hecha en react.
+Página Personal de proyectos hecha en angular.
