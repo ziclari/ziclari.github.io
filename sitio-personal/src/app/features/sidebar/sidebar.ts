@@ -1,4 +1,4 @@
-import { Component, Input, signal } from "@angular/core";
+import { Component, EventEmitter, Input, Output, signal } from "@angular/core";
 
 @Component({
     selector: 'sidebar',
@@ -7,8 +7,5 @@ import { Component, Input, signal } from "@angular/core";
 })
 export class SidebarComponent {
     @Input() items: string[] = [];
-    isOpen = signal(true);
-    toggleSidebar() {
-        this.isOpen.update(state => !state);
-    }
+    @Input() isOpen: boolean = true;
 }

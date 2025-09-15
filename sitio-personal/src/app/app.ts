@@ -11,4 +11,9 @@ import { SidebarComponent } from './features/sidebar/sidebar';
 export class App {
   protected readonly title = signal('sitio-personal');
   sidebarItems: string[] = ['Home', 'About', 'Services', 'Contact'];
+     
+  isOpen = signal(false);
+  toggleSidebar() {
+      this.isOpen.update(state => !state);
+  }
 }

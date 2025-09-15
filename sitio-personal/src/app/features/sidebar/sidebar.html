@@ -1,8 +1,5 @@
-<aside class="sidebar" [class.closed]="!isOpen()">
-  <button class="toggle-btn" (click)="toggleSidebar()">
-    {{ isOpen() ? 'Close' : 'Open' }} Sidebar
-  </button>
-  @if (isOpen()) {
+<aside class="sidebar" [class.closed]="!isOpen">
+  @if (isOpen) {
     <nav>
         <ul>
         @for(item of items; track item){

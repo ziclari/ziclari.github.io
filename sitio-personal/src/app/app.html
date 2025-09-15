@@ -1,6 +1,12 @@
 <div class="main-layout">
-  <sidebar [items]="sidebarItems"></sidebar>
-  <div class="content">
+  <sidebar [items]="sidebarItems" [isOpen]="isOpen()"></sidebar>
+
+  <div class="content" [class.shifted]="isOpen()">
+
+    <button class="toggle-btn" (click)="toggleSidebar()">
+      {{ isOpen() ? 'Close' : 'Open' }} Sidebar
+    </button>
+
     <h1>Welcome to the Website!</h1>
     <p>This is the main content area.</p>
   </div>
