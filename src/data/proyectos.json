@@ -89,6 +89,24 @@
         "descripcion": "Diseño, maquetación y programación de una página responsive HTML y CSS. Uso de React js y Tailwind.",
         "fecha": "29/06/24",
         "tecnologias":["react","html","css","javascript","tailwind"]
+      },
+      {
+        "id": 11,
+        "nombre": "Test con Scala",
+        "imagen": "/images/preview_scala.jpeg",
+        "url":"https://ziclari.github.io/test-scala-js/",
+        "descripcion": "Prueba con scala para la web",
+        "fecha": "21/09/25",
+        "tecnologias":["scala","html","css"]
+      },
+      {
+        "id": 12,
+        "nombre": "Ejercitador de contabilidad",
+        "imagen": "/images/preview_contabilidad.jpeg",
+        "url":"https://ziclari.github.io/prueba-edu/",
+        "descripcion": "Diseño, maquetación y programación de una página responsive HTML y CSS. Uso de React js y Tailwind.",
+        "fecha": "21/09/25",
+        "tecnologias":["react","html","css","javascript","tailwind"]
       }
     ]
   }
