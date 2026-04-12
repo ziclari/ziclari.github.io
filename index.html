@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ziclariv3</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+
+<body>
+    <div class="container main-layout">
+        <!-- Sidebar / Cabecera -->
+        <header class="sidebar">
+            <div class="logo-container">
+                <img class="logo" src="./public/images/logo2.svg" alt="Imagen de pato">
+                <h1 class="title">Ziclariv3</h1>
+            </div>
+
+            <div class="filters-group">
+                <button class="filter-btn active" data-filter="todos">Todos</button>
+                <button class="filter-btn" data-filter="destacados">Destacados</button>
+            </div>
+
+            <div class="filters-group techs">
+                <button class="filter-btn" data-filter="html">HTML y CSS</button>
+                <button class="filter-btn" data-filter="javascript">JavaScript</button>
+                <button class="filter-btn" data-filter="react">React</button>
+                <button class="filter-btn" data-filter="tailwind">Tailwind</button>
+                <button class="filter-btn" data-filter="python">Python</button>
+                <button class="filter-btn" data-filter="scala">Scala</button>
+            </div>
+        </header>
+
+        <!-- Contenido Principal -->
+        <main class="main-content">
+            <h2 class="gallery-title">Galería de Proyectos</h2>
+
+            <div class="controls">
+                <div class="order-buttons">
+                    <button class="order-btn active" data-order="descendente">Más Recientes</button>
+                    <button class="order-btn" data-order="ascendente">Más Antiguos</button>
+                </div>
+                <p class="project-count"><span id="count">0</span> <span id="count-label">proyectos</span></p>
+            </div>
+
+            <div id="proyectos-container" class="proyectos-grid">
+                <!-- Proyectos inyectados por JS -->
+            </div>
+        </main>
+    </div>
+
+    <script src="src/script.js"></script>
+</body>
+
+</html>
