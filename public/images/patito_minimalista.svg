@@ -1,0 +1,23 @@
+<svg width="100%" viewBox="0 0 350 320" xmlns="http://www.w3.org/2000/svg">
+
+  <g transform="translate(-180,-140)">
+    
+    <!-- Cuerpo -->
+    <ellipse cx="340" cy="360" rx="115" ry="85" fill="#F5C800"/>
+
+    <!-- Cabeza -->
+    <circle cx="320" cy="230" r="68" fill="#F5C800"/>
+
+    <!-- Cola -->
+    <path d="M448 310 Q492 265 472 355 Z" fill="#F5C800"/>
+
+    <!-- Pico -->
+    <path d="M375 228 Q418 215 414 242 Q390 255 370 244 Z" fill="#F0822A"/>
+
+    <!-- Ojo -->
+    <circle cx="344" cy="212" r="10" fill="#1A1A1A"/>
+    <circle cx="348" cy="208" r="3.5" fill="#fff"/>
+
+  </g>
+
+</svg>

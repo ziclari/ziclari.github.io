@@ -7,7 +7,7 @@
   --text-main: #ffffff;
   --text-muted: #a8a29e; /* stone-400 */
   --text-muted-dark: #78716c; /* stone-500 */
-  --accent: #f59e0b; /* amber-500 */
+  --accent: #FFF077; /* amber-500 */
   --accent-text: #000000;
 }
 
@@ -91,7 +91,6 @@ body {
 @media (min-width: 640px) {
   .filters-group {
     justify-content: flex-start;
-    margin-top: 2.5rem;
   }
 }
 
@@ -102,8 +101,8 @@ button {
 }
 
 .filter-btn, .order-btn {
-  padding: 0.5rem;
-  border-radius: 0.25rem;
+  padding: 0.65rem;
+  border-radius: 50px;
   font-weight: 700;
   font-size: 0.75rem;
   background-color: var(--bg-panel);

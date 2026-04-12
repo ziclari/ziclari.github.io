@@ -7,6 +7,7 @@ const proyectosData = {
             "url": "https://ziclari.github.io/ziclariv1/HotDog/index.html",
             "descripcion": "Diseño y maquetación de varias páginas en HTML y CSS.",
             "fecha": "23/05/22-30/05/22",
+            "tipo": ["sitio"],
             "tecnologias": ["html", "css"]
         },
         {
@@ -16,6 +17,7 @@ const proyectosData = {
             "url": "https://ziclari.github.io/ziclariv1/Kates/index.html",
             "descripcion": "Diseño y maquetación de una página responsive en HTML y CSS.",
             "fecha": "11/06/22-13/06/22",
+            "tipo": ["sitio"],
             "tecnologias": ["html", "css"]
         },
         {
@@ -25,6 +27,7 @@ const proyectosData = {
             "url": "https://ziclari.github.io/ziclariv1/blues/index.html",
             "descripcion": "Diseño y maquetación de una página sencilla en HTML y CSS.",
             "fecha": "20/06/22",
+            "tipo": ["sitio", "experimento"],
             "tecnologias": ["html", "css"]
         },
         {
@@ -34,6 +37,7 @@ const proyectosData = {
             "url": "https://ziclari.github.io/ziclariv1/uamsis/index.html",
             "descripcion": "Diseño y maquetación de varias páginas sencillas responsive en HTML y CSS.",
             "fecha": "12/04/23",
+            "tipo": ["sitio"],
             "tecnologias": ["html", "css"]
         },
         {
@@ -43,6 +47,7 @@ const proyectosData = {
             "url": "https://ziclari.github.io/ziclariv1/education/inicio.html",
             "descripcion": "Diseño y maquetación de varias páginas en HTML y CSS. Versión incompleta",
             "fecha": "09/12/23",
+            "tipo": ["sitio"],
             "tecnologias": ["html", "css", "javascript"]
         },
         {
@@ -52,6 +57,7 @@ const proyectosData = {
             "url": "https://ziclari.github.io/Ahorcado-Brython/",
             "descripcion": "Diseño, gráficos y lógica de un juego en python (brython).",
             "fecha": "14/02/24",
+            "tipo": ["juego"],
             "tecnologias": ["python", "brython"]
         },
         {
@@ -61,6 +67,7 @@ const proyectosData = {
             "url": "https://ziclari.github.io/SistemaSolar/",
             "descripcion": "Diseño y maquetación de una página responsive HTML y CSS. Uso de React js, UseState",
             "fecha": "16/06/24",
+            "tipo": ["sitio"],
             "tecnologias": ["react", "html", "css", "javascript"]
         },
         {
@@ -70,6 +77,7 @@ const proyectosData = {
             "url": "https://ziclari.github.io/Cocteles/",
             "descripcion": "Diseño y maquetación de una página responsive HTML y CSS. Uso de React js, UseState, UseEffect, API.",
             "fecha": "18/06/24",
+            "tipo": ["sitio"],
             "tecnologias": ["react", "html", "css", "javascript"]
         },
         {
@@ -79,6 +87,7 @@ const proyectosData = {
             "url": "#",
             "descripcion": "Diseño y maquetación de una página responsive HTML y CSS. Uso de React js y Tailwind. Página Actual.",
             "fecha": "23/06/24",
+            "tipo": ["sitio"],
             "tecnologias": ["react", "html", "css", "javascript", "tailwind"]
         },
         {
@@ -88,6 +97,7 @@ const proyectosData = {
             "url": "https://ziclari.github.io/JuegoDeMemoria/",
             "descripcion": "Diseño, maquetación y programación de una página responsive HTML y CSS. Uso de React js y Tailwind.",
             "fecha": "29/06/24",
+            "tipo": ["juego"],
             "tecnologias": ["react", "html", "css", "javascript", "tailwind"]
         },
         {
@@ -97,6 +107,7 @@ const proyectosData = {
             "url": "https://ziclari.github.io/test-scala-js/",
             "descripcion": "Prueba con scala para la web",
             "fecha": "10/05/25",
+            "tipo": ["juego", "experimento"],
             "tecnologias": ["scala", "html", "css"]
         },
         {
@@ -106,6 +117,7 @@ const proyectosData = {
             "url": "https://ziclari.github.io/prueba-edu/",
             "descripcion": "Diseño, maquetación y programación de una página responsive HTML y CSS. Uso de React js y Tailwind.",
             "fecha": "21/09/25",
+            "tipo": ["juego"],
             "tecnologias": ["react", "html", "css", "javascript", "tailwind"]
         }
     ]
@@ -121,20 +133,22 @@ document.addEventListener('DOMContentLoaded', () => {
     const orderBtns = document.querySelectorAll('.order-btn');
 
     // Estado inicial
-    let currentFilter = 'todos';
+    let currentTipo = 'todos';
+    let currentTech = 'todos';
+    let soloDestacados = false;
+
     let currentOrder = 'descendente';
     const idsFavoritos = [6, 7, 10, 12];
 
     function renderProyectos() {
         // Filtrar
-        let proyectos = proyectosData.proyectos;
+        let proyectos = proyectosData.proyectos.filter(p => {
+            const matchTipo = currentTipo === 'todos' || p.tipo.includes(currentTipo);
+            const matchTech = currentTech === 'todos' || p.tecnologias.includes(currentTech);
+            const matchDestacados = !soloDestacados || idsFavoritos.includes(p.id);
 
-        if (currentFilter === 'destacados') {
-            proyectos = proyectos.filter(p => idsFavoritos.includes(p.id));
-        } else if (currentFilter !== 'todos') {
-            proyectos = proyectos.filter(p => p.tecnologias.includes(currentFilter));
-        }
-
+            return matchTipo && matchTech && matchDestacados;
+        });
         // Ordenar
         proyectos.sort((a, b) => {
             if (currentOrder === 'descendente') {
@@ -188,12 +202,22 @@ document.addEventListener('DOMContentLoaded', () => {
     // Inicializar eventos de botones de filtro
     filterBtns.forEach(btn => {
         btn.addEventListener('click', (e) => {
-            // Quitar clase active
-            filterBtns.forEach(b => b.classList.remove('active'));
-            // Añadir clase active
+            const group = e.target.closest('.filters-group').dataset.group;
+            const value = e.target.getAttribute('data-filter');
+
+            // reset visual dentro del grupo
+            e.target.parentElement.querySelectorAll('.filter-btn')
+                .forEach(b => b.classList.remove('active'));
             e.target.classList.add('active');
 
-            currentFilter = e.target.getAttribute('data-filter');
+            if (group === 'tipo') {
+                currentTipo = value;
+            } else if (group === 'tech') {
+                currentTech = value;
+            } else if (group === 'destacados') {
+                soloDestacados = value === 'destacados';
+            }
+
             renderProyectos();
         });
     });

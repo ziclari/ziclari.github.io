@@ -13,16 +13,26 @@
         <!-- Sidebar / Cabecera -->
         <header class="sidebar">
             <div class="logo-container">
-                <img class="logo" src="./public/images/logo2.svg" alt="Imagen de pato">
+               <!-- <img class="logo" src="./public/images/patito_minimalista.svg" alt="Imagen de pato">-->
                 <h1 class="title">Ziclariv3</h1>
             </div>
 
-            <div class="filters-group">
+            <div class="filters-group" data-group="destacados">
                 <button class="filter-btn active" data-filter="todos">Todos</button>
                 <button class="filter-btn" data-filter="destacados">Destacados</button>
             </div>
 
-            <div class="filters-group techs">
+            <p>Tipo</p>
+            <div class="filters-group" data-group="tipo">
+                <button class="filter-btn active" data-filter="todos">Todos</button>
+                <button class="filter-btn" data-filter="juego">Minijuegos</button>
+                <button class="filter-btn" data-filter="sitio">Sitios web</button>
+                <button class="filter-btn" data-filter="experimento">Pruebas</button>
+            </div>
+
+            <p>Lenguaje</p>
+            <div class="filters-group" data-group="tech">
+                <button class="filter-btn active" data-filter="todos">Todos</button>
                 <button class="filter-btn" data-filter="html">HTML y CSS</button>
                 <button class="filter-btn" data-filter="javascript">JavaScript</button>
                 <button class="filter-btn" data-filter="react">React</button>
@@ -30,6 +40,7 @@
                 <button class="filter-btn" data-filter="python">Python</button>
                 <button class="filter-btn" data-filter="scala">Scala</button>
             </div>
+
         </header>
 
         <!-- Contenido Principal -->
